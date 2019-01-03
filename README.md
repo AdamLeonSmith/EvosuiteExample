@@ -1,2 +1,9 @@
 # Calculator
-A simple Java Calculator made for fun that can calculate expressions using my own version of Shunting-yard algorithm
+
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+
+### Prerequisites
+
+
+![alt text](https://github.com/RusuGabriel/Calculator/blob/master/Resources/Calculator.png)
