@@ -3,16 +3,16 @@
  algorithm.The GUI was made with Java Swing.
 
 ## Getting Started
-* These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
-To run the project you must have jdk installed.To check if you already have it run the following command:
+* To run the project you must have jdk installed.To check if you already have it run the following command:
 ```
 java -help
 ```
 
 ### Installing
-If you don't have the jdk you can install it using the following command:
+* If you don't have the jdk you can install it using the following command:
 ```
 sudo apt install openjdk-8-jdk
 ```
