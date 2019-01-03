@@ -18,7 +18,7 @@ sudo apt install openjdk-8-jdk
 ```
 
 ## Running
-To run the application open the terminal on the project src folder and use the following command:
+To run the application open the terminal on the project ***src*** folder and use the following command:
 ```
 make build
 ```
