@@ -28,7 +28,7 @@ after this just double click on the ***Calculator.jar***
 ![alt text](https://github.com/RusuGabriel/Calculator/blob/master/Resources/Calculator.png)
 
 ## Built With
-* [Visual Studio Code](https://code.visualstudio.com/) - a simple yet powerful code editor
+* [Visual Studio Code](https://code.visualstudio.com/) - a simple yet powerful text editor that inherits many of the capabilities of the Visual Studio IDE.
 
 ## Author
 * ***Rusu Gabriel***
