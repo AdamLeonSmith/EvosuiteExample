@@ -28,7 +28,7 @@ after this just double click on the ***Calculator.jar***
 ![alt text](https://github.com/RusuGabriel/Calculator/blob/master/Resources/Calculator.png)
 
 ## Built With
-* [Visual Studio Code](https://code.visualstudio.com/) - a simple yet powerful text editor that inherits many of the capabilities of the Visual Studio IDE.
+* [Visual Studio Code](https://code.visualstudio.com/) -  is a lightweight but powerful source code editor which runs on  your desktop and is available for Windows, macOS and Linux. It comes with built-in  support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
 
 ## Author
 * ***Rusu Gabriel***
