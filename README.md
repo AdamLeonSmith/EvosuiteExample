@@ -1,6 +1,16 @@
-# 
-* A simple Java Calculator made for fun that can calculate expressions using my own version of Shunting-yard 
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
+
+<h3 align="center">Calculator</h3>
+
+---
+
+<p align="center"> A simple Java Calculator made for fun that can calculate expressions using my own version of Shunting-yard 
  algorithm.The GUI was made with Java Swing.
+    <br> 
+</p>
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
@@ -36,18 +46,7 @@ after this just double click on the ***Calculator.jar***
 
 
 
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
 
-<h3 align="center">Calculator</h3>
-
----
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
 <!--
 ## 📝 Table of Contents
 - [About](#about)
