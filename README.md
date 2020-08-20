@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://raw.githubusercontent.com/RusuGabriel/Calculator/master/src/main/resources/logo.png" alt="Project logo"></a>
+ <img width=200px height=200px src="https://raw.githubusercontent.com/RusuGabriel/Calculator/master/src/main/resources/calculator.png" alt="Project logo"></a>
 </p>
 
 <h1 align="center">Calculator</h3>
@@ -16,7 +16,7 @@
 - [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
+- [TODO](/TODO.md)
 - [Authors](#authors)
 
 ## 🧐 About <a name = "about"></a>
@@ -27,7 +27,7 @@ This project is an implementation of the popular Calculator app with a GUI that 
 - division
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 To check if you already have the requirements
