@@ -60,7 +60,7 @@ After running the ```mvn exec:java``` command you should be ready to use the Cal
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Maven](https://maven.apache.org/) - build tool
 - [Java 14 JDK](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html) - virtual machine needed to run & compile the Java code
-- [Visual Studio Code](https://vuejs.org/) - code editor
+- [Visual Studio Code](https://code.visualstudio.com/) - code editor
 
 
 ## ✍️ Authors <a name = "authors"></a>
