@@ -61,10 +61,10 @@ To run the unit-tests on your local computer type the following command: ```mvn 
 After running the ```mvn exec:java``` command you should be ready to use the Calculator app developed in this project.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Maven](https://www.mongodb.com/) - build tool
+- [Java 14 JDK](https://expressjs.com/) - virtual machine needed to run & compile the Java code
+- [Visual Studio Code](https://vuejs.org/) - code editor
+
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
