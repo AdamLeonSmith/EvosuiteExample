@@ -3,7 +3,7 @@
  <img width=200px height=200px src="https://raw.githubusercontent.com/RusuGabriel/Calculator/master/src/main/resources/logo.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Calculator</h3>
+<h1 align="center">Calculator</h3>
 
 
 <p align="center"> A simple Java Calculator made for fun that can calculate expressions using my own version of Shunting-yard 
@@ -33,29 +33,27 @@ This project is an implementation of the popular Calculator app with a GUI that 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-To run the Calculator app you should have:
-- Maven
-- Java
+To check if you already have the requirements
+run the following command(cmd/linux terminal):
+- for __Java__: ``` java --version```
+- for __Maven__: ``` mvn --version ```
 
-```
-```
+If you don't have the requirements above mentioned you should follow the following links to install them:
+- [Maven](https://maven.apache.org/)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
 
 ### Installing
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+To run the app you should follow the next steps, after installing the requirements:
+In the root folder of the project type:
 
 ```
-until finished
+mvn install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+If the above command succeeds you should have a new folder called target after this to run the app you should type:
+```
+mvn exec:java
+```
 
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
