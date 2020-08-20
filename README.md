@@ -3,45 +3,65 @@
  <img width=200px height=200px src="https://raw.githubusercontent.com/RusuGabriel/Calculator/master/src/main/resources/logo.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Calculator</h3>
+<h1 align="center">Calculator</h3>
 
 
-<p align="center"> A simple Java Calculator made for fun that can calculate expressions using my own version of Shunting-yard 
- algorithm.The GUI was made with Java Swing.
+<p align="center"> A simple Java Calculator made for fun that can calculate expressions using my version of Shunting-yard 
+ algorithm.
     <br> 
 </p>
 
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+## 📝 Table of Contents
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Authors](#authors)
+
+## 🧐 About <a name = "about"></a>
+This project is an implementation of the popular Calculator app with a GUI that resembles the iPhone design and colours and currently supports basic operations and nested expression calculus that contains the following operations:
+- addition
+- difference
+- multiplication
+- division
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-* To run the project you must have jdk installed.To check if you already have it run the following command:
-```
-java -help
-```
+To check if you already have the requirements
+run the following command(cmd/linux terminal):
+- for __Java__: ``` java --version```
+- for __Maven__: ``` mvn --version ```
+
+If you don't have the requirements above mentioned you should follow the following links to install them:
+- [Maven](https://maven.apache.org/)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
 
 ### Installing
-* If you don't have the jdk you can install it using the following command:
+To run the app you should follow the next steps, after installing the requirements. In the root folder of the project type:
+
 ```
-sudo apt install openjdk-8-jdk
+mvn install
 ```
 
-## Running
-To run the application open the terminal on the project ***src*** folder and use the following command:
+If the above command succeeds you should have a new folder called target after this to run the app you should type:
 ```
-make build
+mvn exec:java
 ```
-after this just double click on the ***Calculator.jar***
- ### Screenshot
- 
-![alt text](https://github.com/RusuGabriel/Calculator/blob/master/Resources/Calculator.png)
 
-## Built With
-* [Visual Studio Code](https://code.visualstudio.com/) -  is a lightweight but powerful source code editor which runs on  your desktop and is available for Windows, macOS and Linux. It comes with built-in  support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
+## 🔧 Running the tests <a name = "tests"></a>
+To run the unit-tests on your local computer type the following command: ```mvn test```
 
-## Author
-* ***Rusu Gabriel***
+## 🎈 Usage <a name="usage"></a>
+After running the ```mvn exec:java``` command you should be ready to use the Calculator app developed in this project.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+- [Maven](https://maven.apache.org/) - build tool
+- [Java 14 JDK](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html) - virtual machine needed to run & compile the Java code
+- [Visual Studio Code](https://vuejs.org/) - code editor
 
 
-
-
+## ✍️ Authors <a name = "authors"></a>
+- [@RusuGabriel](https://github.com/RusuGabriel) - Idea & Initial work
