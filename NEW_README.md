@@ -43,8 +43,7 @@ If you don't have the requirements above mentioned you should follow the followi
 - [Java JDK](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
 
 ### Installing
-To run the app you should follow the next steps, after installing the requirements:
-In the root folder of the project type:
+To run the app you should follow the next steps, after installing the requirements. In the root folder of the project type:
 
 ```
 mvn install
@@ -56,27 +55,10 @@ mvn exec:java
 ```
 
 ## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-Explain what these tests test and why
-
-```
-Give an example
-```
+To run the unit-tests on your local computer type the following command: ```mvn test```
 
 ## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-Add additional notes about how to deploy this on a live system.
+After running the ```mvn exec:java``` command you should be ready to use the Calculator app developed in this project.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [MongoDB](https://www.mongodb.com/) - Database
