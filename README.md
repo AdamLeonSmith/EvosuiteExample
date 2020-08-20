@@ -46,7 +46,7 @@ To run the app you should follow the next steps, after installing the requiremen
 mvn install
 ```
 
-If the above command succeeds you should have a new folder called target after this to run the app you should type:
+If the above command succeeds you should have a new folder called target. After this to run the app you should type:
 ```
 mvn exec:java
 ```
