@@ -14,12 +14,33 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.5</maven.compiler.source>
+		<maven.compiler.target>1.5</maven.compiler.target>
 
 		<evosuiteVersion>1.0.6</evosuiteVersion>
 
 	</properties>
+
+	<reporting>
+		<outputDirectory>${basedir}/target/site</outputDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.6</version>
+				<configuration>
+					<dataFile>target/jacoco.exec</dataFile>
+				</configuration>
+				</plugin>
+				<plugin>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>2.0.1</version>
+					<reportSets>
+						<reportSet></reportSet>
+					</reportSets>
+				</plugin>
+		</plugins>
+	</reporting>
 
 	<dependencies>
 		<dependency>
@@ -44,24 +65,55 @@
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
 					<version>0.8.6</version>
+					<configuration>
+						<dataFile>target/jacoco.exec</dataFile>
+					</configuration>
+
 					<executions>
 
 						<execution>
-							<id>prepare-agent</id>
-							
+							<id>pre-unit-test</id>
 							<goals>
 								<goal>prepare-agent</goal>
 							</goals>
+							<configuration>
+								<propertyName>jacoco.agent.argLine</propertyName>
+								<destFile>target/jacoco.exec</destFile>
+							</configuration>
 						</execution>
 						<!-- attached to Maven test phase -->
 						<execution>
-							<id>report</id>
-							<phase>test</phase>
+							<id>default-report</id>
+							<phase>verify</phase>
 							<goals>
-								<goal>test</goal>
+								<goal>report</goal>
 							</goals>
+							<configuration>
+								<propertyName>jacoco.agent.argLine</propertyName>
+								<dataFile>target/jacoco.exec</dataFile>
+							</configuration>
 						</execution>
-						
+						<execution>
+							<id>default-check</id>
+							<goals>
+								<goal>check</goal>
+							</goals>
+							<configuration>
+								<rules>
+									<rule>
+										<element>BUNDLE</element>
+										<limits>
+											<limit>
+												<counter>COMPLEXITY</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>0.60</minimum>
+											</limit>
+										</limits>
+									</rule>
+								</rules>
+							</configuration>
+						</execution>
+
 						<!-- execution> <id>report</id> <phase>test</phase> <goals> <goal>report</goal> 
 							</goals> <configuration> <dataFile>${project.basedir}/target/jacoco.exec</dataFile> 
 							<outputDirectory>${project.basedir}/target/jacoco-report</outputDirectory> 
