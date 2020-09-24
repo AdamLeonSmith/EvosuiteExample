@@ -14,8 +14,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.5</maven.compiler.source>
-		<maven.compiler.target>1.5</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<evosuiteVersion>1.0.6</evosuiteVersion>
 
@@ -81,7 +81,7 @@
 								<destFile>target/jacoco.exec</destFile>
 							</configuration>
 						</execution>
-						<!-- attached to Maven test phase -->
+
 						<execution>
 							<id>default-report</id>
 							<phase>verify</phase>
@@ -114,18 +114,12 @@
 							</configuration>
 						</execution>
 
-						<!-- execution> <id>report</id> <phase>test</phase> <goals> <goal>report</goal> 
-							</goals> <configuration> <dataFile>${project.basedir}/target/jacoco.exec</dataFile> 
-							<outputDirectory>${project.basedir}/target/jacoco-report</outputDirectory> 
-							</configuration> </execution -->
 					</executions>
 				</plugin>
-				<!-->plugin> <groupId>org.evosuite.plugins</groupId> <artifactId>evosuite-maven-plugin</artifactId> 
+				<plugin> <groupId>org.evosuite.plugins</groupId> <artifactId>evosuite-maven-plugin</artifactId> 
 					<version>${evosuiteVersion}</version> <executions> <execution> <goals> <goal> 
 					prepare </goal> </goals> <phase> process-test-classes </phase> </execution> 
-					</executions> </plugin -->
-				<!-- lock down plugins versions to avoid using Maven defaults (may be 
-					moved to parent pom) -->
+					</executions> </plugin >
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
@@ -136,12 +130,10 @@
 				</plugin>
 
 
-				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
 				</plugin>
-				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
